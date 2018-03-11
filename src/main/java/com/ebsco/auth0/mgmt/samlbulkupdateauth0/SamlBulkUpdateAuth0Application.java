@@ -53,7 +53,7 @@ public class SamlBulkUpdateAuth0Application {
             long startTime = System.currentTimeMillis() / 1000L;
             logger.info("Start time: "+startTime);
 
-            for (int i = 0; i <500; i++){
+            for (int i = 0; i <10; i++){
                 createANewConnection(mgmt, "automated-conn-"+i, connectionList.get(0).getOptions(), connectionList.get(0).getEnabledClients());
             }
 
