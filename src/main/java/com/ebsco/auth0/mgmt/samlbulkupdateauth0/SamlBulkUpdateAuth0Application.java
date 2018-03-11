@@ -30,6 +30,9 @@ public class SamlBulkUpdateAuth0Application {
 	@Value(value = "${com.auth0.domain}")
 	private String domain;
 
+    @Value(value = "${com.auth0.db.connections}")
+	private String connectionLimit;
+
 	@Value(value = "${com.auth0.mgmttoken}")
 	private String mgmtToken;
 
@@ -53,7 +56,7 @@ public class SamlBulkUpdateAuth0Application {
             long startTime = System.currentTimeMillis() / 1000L;
             logger.info("Start time: "+startTime);
 
-            for (int i = 0; i <10; i++){
+            for (int i = 0; i < Integer.valueOf(connectionLimit); i++){
                 createANewConnection(mgmt, "automated-conn-"+i, connectionList.get(0).getOptions(), connectionList.get(0).getEnabledClients());
             }
 
