@@ -47,7 +47,13 @@ public class SamlBulkUpdateAuth0Application {
     public CommandLineRunner demo() {
         return (args) -> {
 
-            ConnectionFilter connectionFilter = new ConnectionFilter();
+            deleteAndCreateManyConnections();
+
+        };
+    }
+
+    private void deleteAndCreateManyConnections(){
+	    ConnectionFilter connectionFilter = new ConnectionFilter();
             ManagementAPI mgmt = new ManagementAPI(domain, mgmtToken);
             List<Connection> connectionList = listAllExistingCloudDbConnections(mgmt,connectionFilter);
             deleteAllExistingCloudDbConnections(mgmt,connectionFilter);
@@ -57,14 +63,12 @@ public class SamlBulkUpdateAuth0Application {
             logger.info("Start time: "+startTime);
 
             for (int i = 0; i < Integer.valueOf(connectionLimit); i++){
+                logger.info("creating a connection: "+ i);
                 createANewConnection(mgmt, "automated-conn-"+i, connectionList.get(0).getOptions(), connectionList.get(0).getEnabledClients());
             }
 
             long elapsedTimeSeconds = (System.currentTimeMillis() / 1000L) - startTime;
             logger.info("Total time"+elapsedTimeSeconds);
-
-
-        };
     }
 
     private List<Connection> listAllExistingCloudDbConnections(ManagementAPI mgmt, ConnectionFilter connectionFilter){
@@ -105,8 +109,9 @@ public class SamlBulkUpdateAuth0Application {
         }catch (Exception e){
             logger.error(e.getMessage());
         }
-
+        int i = 0;
         for (Connection connection: list) {
+            logger.info("deleting connection: "+ i++);
             deleteAnExistingCloudDbConnection(mgmt,connection.getId());
         }
         logger.info("====================DELETED ALL EXISTING AUTH0 U/PWD DB CONNECTIONS====================");

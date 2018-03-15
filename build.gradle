@@ -25,6 +25,8 @@ repositories {
 
 
 dependencies {
+	// https://mvnrepository.com/artifact/org.opensaml/opensaml
+	compile group: 'org.opensaml', name: 'opensaml', version: '2.6.4'
 	compile 'com.auth0:auth0:1.5.1'
 	compile group: 'com.google.guava', name: 'guava', version: '22.0'
 	compile('org.springframework.boot:spring-boot-starter-actuator')
