@@ -4,9 +4,15 @@ import com.auth0.client.mgmt.ManagementAPI;
 import com.auth0.client.mgmt.filter.ConnectionFilter;
 import com.auth0.json.mgmt.Connection;
 import com.auth0.net.Request;
+import com.google.common.io.Files;
 import com.google.common.util.concurrent.RateLimiter;
+
+import org.opensaml.saml2.metadata.EntityDescriptor;
+import org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider;
+import org.opensaml.xml.parse.BasicParserPool;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -14,7 +20,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.PropertySources;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 
+import java.io.File;
+import java.io.InputStream;
 import java.time.ZonedDateTime;
 import java.util.List;
 import java.util.Map;
@@ -36,6 +48,8 @@ public class SamlBulkUpdateAuth0Application {
 	@Value(value = "${com.auth0.mgmttoken}")
 	private String mgmtToken;
 
+	@Autowired
+    private ResourceLoader resourceLoader;
 
     private RateLimiter rateLimiter = RateLimiter.create(1.8);
 
@@ -47,7 +61,33 @@ public class SamlBulkUpdateAuth0Application {
     public CommandLineRunner demo() {
         return (args) -> {
 
-            deleteAndCreateManyConnections();
+            //Resource resource = resourceLoader.getResource("classpath:InCommon-metadata-idp-only.xml");
+            File initialFile = new File("src/main/resources/InCommon-metadata-idp-only.xml");
+            InputStream targetStream = Files.asByteSource(initialFile).openStream();
+            logger.info("file exists: "+initialFile.exists());
+            // Parse XML file
+            BasicParserPool ppMgr = new BasicParserPool();
+            ppMgr.setNamespaceAware(false);
+            Document inCommonMDDoc = ppMgr.parse(targetStream);
+            Element rootElement = inCommonMDDoc.getDocumentElement();
+            logger.info(rootElement.getBaseURI());
+
+
+
+            // Get apropriate unmarshaller
+            /*UnmarshallerFactory unmarshallerFactory = Configuration.getUnmarshallerFactory();
+            Unmarshaller unmarshaller = unmarshallerFactory.getUnmarshaller(rootElement);
+
+            // Unmarshall using the document root element, an EntitiesDescriptor in this case
+            XMLObject xmlObject = unmarshaller.unmarshall(rootElement);
+*/
+            /*FilesystemMetadataProvider idpMetaDataProvider = new FilesystemMetadataProvider(resource.getFile());
+            idpMetaDataProvider.setRequireValidMetadata(false);
+            idpMetaDataProvider.setParserPool(new BasicParserPool());
+            idpMetaDataProvider.initialize();*/
+            //EntityDescriptor idpEntityDescriptor = idpMetaDataProvider.getEntityDescriptor("Some entity id");
+
+            //deleteAndCreateManyConnections();
 
         };
     }

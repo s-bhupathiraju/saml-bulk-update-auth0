@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><EntitiesDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:icmd="http://id.incommon.org/metadata" xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi" xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui" xmlns:remd="http://refeds.org/metadata" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="INC20180314T190105" Name="urn:mace:incommon" validUntil="2018-03-28T19:01:05Z"><ds:Signature>
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<ds:Reference URI="#INC20180314T190105">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+<ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>8x6GdYe85GR5923U70oZ6jTC8Iey9hUQnqToCmb/1tY=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+MK7fZlOl4R6B+vnlppFaFe/s3hPFXdgi+EuEasSQ8cNZZin3pYaSTje2uNIfkQNuNp3LWr/ojl7z
+1vXphw7rw45PykwR20yLbhQyOT5O0p96TlXTj77IHhxUg9XVb3k4IuAuvkpJuLnv+lfnv80Wz7vd
+yJspoX6335FWqxvoCyh05zIhc7hY6tYf2Tb4htzRd49ETxthsjDSkKdZqsE5onwy4RvWp6HgOSJv
+Kteb8O88Xj+zB5V2i8cXTLnJEQcLtJaU/39JW567ViNBz8IeviHczE5gVEnvYWZzGGkj242dGqek
+bpjMGbK/dVN7uv8Ibg1IZPIphUkjiyZ3qpWBQA==
+</ds:SignatureValue>
+<ds:KeyInfo>
+<ds:KeyValue>
+<ds:RSAKeyValue>
+<ds:Modulus>
+0Chdkrn+dG5Zj5L3UIw+xeWgNzm8ajw7/FyqRQ1SjD4Lfg2WCdlfjOrYGNnVZMCTfItoXTSpg4rX
+xHQsykeNiYRu2+02uMS+1pnBqWjzdPJE0od+q8EbdvE6ShimjyNn0yQfGyQKCNdYuc+75MIHsaIO
+AEtDZUST9Sd4oeU1zRjV2sGvUd+JFHveUAhRc0b+JEZfIEuq/LIU9qxm/+gFaawlmojZPyOWZ1Jl
+swbrrJYYyn10qgnJvjh9gZWXKjmPxqvHKJcATPhAh2gWGabWTXBJCckMe1hrHCl/vbDLCmz0/oYu
+oaSDzP6zE9YSA/xCplaHA0moC1Vs2H5MOQGlew==
+</ds:Modulus>
+<ds:Exponent>AQAB</ds:Exponent>
+</ds:RSAKeyValue>
+</ds:KeyValue>
+<ds:X509Data>
+<ds:X509Certificate>
+MIIDgTCCAmmgAwIBAgIJAJRJzvdpkmNaMA0GCSqGSIb3DQEBCwUAMFcxCzAJBgNVBAYTAlVTMRUw
+EwYDVQQKDAxJbkNvbW1vbiBMTEMxMTAvBgNVBAMMKEluQ29tbW9uIEZlZGVyYXRpb24gTWV0YWRh
+dGEgU2lnbmluZyBLZXkwHhcNMTMxMjE2MTkzNDU1WhcNMzcxMjE4MTkzNDU1WjBXMQswCQYDVQQG
+EwJVUzEVMBMGA1UECgwMSW5Db21tb24gTExDMTEwLwYDVQQDDChJbkNvbW1vbiBGZWRlcmF0aW9u
+IE1ldGFkYXRhIFNpZ25pbmcgS2V5MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0Chd
+krn+dG5Zj5L3UIw+xeWgNzm8ajw7/FyqRQ1SjD4Lfg2WCdlfjOrYGNnVZMCTfItoXTSpg4rXxHQs
+ykeNiYRu2+02uMS+1pnBqWjzdPJE0od+q8EbdvE6ShimjyNn0yQfGyQKCNdYuc+75MIHsaIOAEtD
+ZUST9Sd4oeU1zRjV2sGvUd+JFHveUAhRc0b+JEZfIEuq/LIU9qxm/+gFaawlmojZPyOWZ1Jlswbr
+rJYYyn10qgnJvjh9gZWXKjmPxqvHKJcATPhAh2gWGabWTXBJCckMe1hrHCl/vbDLCmz0/oYuoaSD
+zP6zE9YSA/xCplaHA0moC1Vs2H5MOQGlewIDAQABo1AwTjAdBgNVHQ4EFgQU5ij9YLU5zQ6K75kP
+gVpyQ2N/lPswHwYDVR0jBBgwFoAU5ij9YLU5zQ6K75kPgVpyQ2N/lPswDAYDVR0TBAUwAwEB/zAN
+BgkqhkiG9w0BAQsFAAOCAQEAaQkEx9xvaLUt0PNLvHMtxXQPedCPw5xQBd2VWOsWPYspRAOSNbU1
+VloY+xUkUKorYTogKUY1q+uh2gDIEazW0uZZaQvWPp8xdxWqDh96n5US06lszEc+Lj3dqdxWkXRR
+qEbjhBFh/utXaeyeSOtaX65GwD5svDHnJBclAGkzeRIXqxmYG+I2zMm/JYGzEnbwToyC7yF6Q8cQ
+xOr37hEpqz+WN/x3qM2qyBLECQFjmlJrvRLkSL15PCZiu+xFNFd/zx6btDun5DBlfDS9DG+SHCNH
+6Nq+NfP+ZQ8CGzP/3TaZPzMlKPDCjp0XOQfyQqFIXdwjPFTWjEusDBlm4qJAlQ==
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</ds:Signature>
+<Extensions>
+  <mdrpi:PublicationInfo creationInstant="2018-03-14T19:01:05Z" publisher="https://incommon.org"/>
+</Extensions>
+<EntityDescriptor entityID="urn:mace:incommon:osu.edu">
+  <Extensions>
+    <mdrpi:RegistrationInfo registrationAuthority="https://incommon.org"/>
+    <mdattr:EntityAttributes>
+      <saml:Attribute Name="http://macedir.org/entity-category-support" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="urn:oasis:names:tc:SAML:attribute:assurance-certification" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>https://refeds.org/sirtfi</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://id.incommon.org/category/registered-by-incommon</saml:AttributeValue>
+      </saml:Attribute>
+    </mdattr:EntityAttributes>
+  </Extensions>
+  <IDPSSODescriptor errorURL="https://webauth.service.ohio-state.edu/support.html" protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+    <Extensions>
+      <shibmd:Scope regexp="false">osu.edu</shibmd:Scope>
+      <mdui:UIInfo>
+        <mdui:DisplayName xml:lang="en">Ohio State University</mdui:DisplayName>
+        <mdui:InformationURL xml:lang="en">https://webauth.service.ohio-state.edu/info.html</mdui:InformationURL>
+        <mdui:PrivacyStatementURL xml:lang="en">https://it.osu.edu/sites/default/files/files-1477502394/disclosurepolicy.pdf</mdui:PrivacyStatementURL>
+        <mdui:Logo height="83" width="83" xml:lang="en">https://webauth.service.ohio-state.edu/images/osu_mdui.png</mdui:Logo>
+      </mdui:UIInfo>
+    </Extensions>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <!-- Serial No. 12375483969372239368, expires on Mon Feb  4 20:07:37 2030 GMT -->
+          <ds:X509Certificate>
+MIIDITCCAgmgAwIBAgIJAKu+jRod+TYIMA0GCSqGSIb3DQEBBQUAMCkxJzAlBgNV
+BAMTHndlYmF1dGguc2VydmljZS5vaGlvLXN0YXRlLmVkdTAeFw0xMDAyMDkyMDA3
+MzdaFw0zMDAyMDQyMDA3MzdaMCkxJzAlBgNVBAMTHndlYmF1dGguc2VydmljZS5v
+aGlvLXN0YXRlLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMpZ
+P+xV7kNCuuUtg4X8MTxTnS2TSU/tompvYjI0af4q7N5od7uzEqHBD9FMvh9bZ7GS
+CACX5yYjBYZCb59i0tstfpCsDBho2Wi497EjmaTw81EQ1AjM6EhRb/we0MLj0er8
+8q+vnVC7Jb7DoStoNIEFoOTv8LvKldrrXVX3yHZR3bEVtvblZbGMSYtPdH/TYMDQ
+cmqkpzldfz9rQFDLSM8mqBqf56zmB8uzkZKhujTXOzb4STvaq7hhAnDwT3z9c00O
+XbDBWxd1CplgHwZvrbWxYxf5gTCaPvHuLY5WeA8Ky5SUZifO/szEDvEm8K0rHStK
+H/blQiX5fUQ6t3SfxbsCAwEAAaNMMEowKQYDVR0RBCIwIIIed2ViYXV0aC5zZXJ2
+aWNlLm9oaW8tc3RhdGUuZWR1MB0GA1UdDgQWBBR70C49vjOa/Ikk86hkX998wqQt
+UDANBgkqhkiG9w0BAQUFAAOCAQEAlgMMaTIwrly4U896lUa92iif3bLGADPjc0Is
+6a6k6RytjJm/r0lbtjCWW6zs1T6L7458Ow+57fyF0Oh/iXvj65m+dvCBWXnag7hN
+1yMBJQMRpSjH7dLko7y0EJ/ZrKEYQwYnBGmCILvJB/MIj2eEkq2Z47uWpvrehJfb
+zsEeAbjNqw1V/AJN7E4paw8aYg8TXEXAdOvNL5h7KRQw8Ui0kCw2DeTTIXExSxZd
+bqw6ldfQD2fVYnLxDGTFqITCi1a9TidA4xCXD95F7uQaEao3O8ArZcyag62uiMtv
+i24RvCRvD/vsnUhI82pV/DK+2icz6UDtiiKrFNAmIiR14TanfA==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://webauth.service.ohio-state.edu/idp/profile/Shibboleth/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://webauth.service.ohio-state.edu/idp/profile/SAML2/Redirect/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://webauth.service.ohio-state.edu/idp/profile/SAML2/POST/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://webauth.service.ohio-state.edu/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://webauth.service.ohio-state.edu/idp/profile/SAML2/SOAP/ECP"/>
+  </IDPSSODescriptor>
+  <Organization>
+    <OrganizationName xml:lang="en">The Ohio State University</OrganizationName>
+    <OrganizationDisplayName xml:lang="en">Ohio State University</OrganizationDisplayName>
+    <OrganizationURL xml:lang="en">http://www.osu.edu/</OrganizationURL>
+  </Organization>
+  <ContactPerson contactType="support">
+    <GivenName>IT Service Desk</GivenName>
+    <EmailAddress>8help@osu.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="technical">
+    <GivenName>Authentication Support</GivenName>
+    <EmailAddress>webauth-admin@lists.service.ohio-state.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="administrative">
+    <GivenName>Authentication Support</GivenName>
+    <EmailAddress>webauth-admin@lists.service.ohio-state.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="other" remd:contactType="http://refeds.org/metadata/contactType/security">
+    <GivenName>Security Response Team</GivenName>
+    <EmailAddress>security@osu.edu</EmailAddress>
+  </ContactPerson>
+</EntityDescriptor>
+<EntityDescriptor entityID="https://shibidp.cit.cornell.edu/idp/shibboleth">
+  <Extensions>
+    <mdrpi:RegistrationInfo registrationAuthority="https://incommon.org"/>
+    <mdattr:EntityAttributes>
+      <saml:Attribute Name="http://macedir.org/entity-category-support" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://id.incommon.org/category/research-and-scholarship</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="urn:oasis:names:tc:SAML:attribute:assurance-certification" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>https://refeds.org/sirtfi</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://id.incommon.org/category/registered-by-incommon</saml:AttributeValue>
+      </saml:Attribute>
+    </mdattr:EntityAttributes>
+  </Extensions>
+  <IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+    <Extensions>
+      <shibmd:Scope regexp="false">cornell.edu</shibmd:Scope>
+      <mdui:UIInfo>
+        <mdui:DisplayName xml:lang="en">Cornell University</mdui:DisplayName>
+        <mdui:PrivacyStatementURL xml:lang="en">https://www.dfa.cornell.edu/policy/policies/access-information-technology-data-and-monitoring-network-transmissions</mdui:PrivacyStatementURL>
+        <mdui:Logo height="100" width="383" xml:lang="en">https://shibidp.cit.cornell.edu/cornell-logo.png</mdui:Logo>
+      </mdui:UIInfo>
+    </Extensions>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <!-- Serial No. 1315837868438779038659806298608780803577283839491, expires on Fri Nov 23 18:52:44 2029 GMT -->
+          <ds:X509Certificate>
+MIIDSDCCAjCgAwIBAgIVAOZ8NfBem6sHcI7F39sYmD/JG4YDMA0GCSqGSIb3DQEB
+BQUAMCIxIDAeBgNVBAMTF3NoaWJpZHAuY2l0LmNvcm5lbGwuZWR1MB4XDTA5MTEy
+MzE4NTI0NFoXDTI5MTEyMzE4NTI0NFowIjEgMB4GA1UEAxMXc2hpYmlkcC5jaXQu
+Y29ybmVsbC5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCTURo9
+90uuODo/5ju3GZThcT67K3RXW69jwlBwfn3png75Dhyw9Xa50RFv0EbdfrojH1P1
+9LyfCjubfsm9Z7FYkVWSVdPSvQ0BXx7zQxdTpE9137qj740tMJr7Wi+iWdkyBQS/
+bCNhuLHeNQor6NXZoBgX8HvLy4sCUb/4v7vbp90HkmP3FzJRDevzgr6PVNqWwNqp
+tZ0vQHSF5D3iBNbxq3csfRGQQyVi729XuWMSqEjPhhkf1UjVcJ3/cG8tWbRKw+W+
+OIm71k+99kOgg7IvygndzzaGDVhDFMyiGZ4njMzEJT67sEq0pMuuwLMlLE/86mSv
+uGwO2Qacb1ckzjodAgMBAAGjdTBzMFIGA1UdEQRLMEmCF3NoaWJpZHAuY2l0LmNv
+cm5lbGwuZWR1hi5odHRwczovL3NoaWJpZHAuY2l0LmNvcm5lbGwuZWR1L2lkcC9z
+aGliYm9sZXRoMB0GA1UdDgQWBBSQgitoP2/rJMDepS1sFgM35xw19zANBgkqhkiG
+9w0BAQUFAAOCAQEAaFrLOGqMsbX1YlseO+SM3JKfgfjBBL5TP86qqiCuq9a1J6B7
+Yv+XYLmZBy04EfV0L7HjYX5aGIWLDtz9YAis4g3xTPWe1/bjdltUq5seRuksJjyb
+prGI2oAv/ShPBOyrkadectHzvu5K6CL7AxNTWCSXswtfdsuxcKo65tO5TRO1hWlr
+7Pq2F+Oj2hOvcwC0vOOjlYNe9yRE9DjJAzv4rrZUg71R3IEKNjfOF80LYPAFD2Sp
+p36uB6TmSYl1nBmS5LgWF4EpEuODPSmy4sIV6jl1otuyI/An2dOcNqcgu7tYEXLX
+C8N6DXggDWPtPRdpk96UW45huvXudpZenrcd7A==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shibidp.cit.cornell.edu:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="1"/>
+    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://shibidp.cit.cornell.edu:8443/idp/profile/SAML1/SOAP/ArtifactResolution" index="2"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://shibidp.cit.cornell.edu/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+    <SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://shibidp.cit.cornell.edu/idp/profile/Shibboleth/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shibidp.cit.cornell.edu/idp/profile/SAML2/Redirect/SSO"/>
+  </IDPSSODescriptor>
+  <AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+    <Extensions>
+      <shibmd:Scope regexp="false">cornell.edu</shibmd:Scope>
+    </Extensions>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <!-- Serial No. 1315837868438779038659806298608780803577283839491, expires on Fri Nov 23 18:52:44 2029 GMT -->
+          <ds:X509Certificate>
+MIIDSDCCAjCgAwIBAgIVAOZ8NfBem6sHcI7F39sYmD/JG4YDMA0GCSqGSIb3DQEB
+BQUAMCIxIDAeBgNVBAMTF3NoaWJpZHAuY2l0LmNvcm5lbGwuZWR1MB4XDTA5MTEy
+MzE4NTI0NFoXDTI5MTEyMzE4NTI0NFowIjEgMB4GA1UEAxMXc2hpYmlkcC5jaXQu
+Y29ybmVsbC5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCTURo9
+90uuODo/5ju3GZThcT67K3RXW69jwlBwfn3png75Dhyw9Xa50RFv0EbdfrojH1P1
+9LyfCjubfsm9Z7FYkVWSVdPSvQ0BXx7zQxdTpE9137qj740tMJr7Wi+iWdkyBQS/
+bCNhuLHeNQor6NXZoBgX8HvLy4sCUb/4v7vbp90HkmP3FzJRDevzgr6PVNqWwNqp
+tZ0vQHSF5D3iBNbxq3csfRGQQyVi729XuWMSqEjPhhkf1UjVcJ3/cG8tWbRKw+W+
+OIm71k+99kOgg7IvygndzzaGDVhDFMyiGZ4njMzEJT67sEq0pMuuwLMlLE/86mSv
+uGwO2Qacb1ckzjodAgMBAAGjdTBzMFIGA1UdEQRLMEmCF3NoaWJpZHAuY2l0LmNv
+cm5lbGwuZWR1hi5odHRwczovL3NoaWJpZHAuY2l0LmNvcm5lbGwuZWR1L2lkcC9z
+aGliYm9sZXRoMB0GA1UdDgQWBBSQgitoP2/rJMDepS1sFgM35xw19zANBgkqhkiG
+9w0BAQUFAAOCAQEAaFrLOGqMsbX1YlseO+SM3JKfgfjBBL5TP86qqiCuq9a1J6B7
+Yv+XYLmZBy04EfV0L7HjYX5aGIWLDtz9YAis4g3xTPWe1/bjdltUq5seRuksJjyb
+prGI2oAv/ShPBOyrkadectHzvu5K6CL7AxNTWCSXswtfdsuxcKo65tO5TRO1hWlr
+7Pq2F+Oj2hOvcwC0vOOjlYNe9yRE9DjJAzv4rrZUg71R3IEKNjfOF80LYPAFD2Sp
+p36uB6TmSYl1nBmS5LgWF4EpEuODPSmy4sIV6jl1otuyI/An2dOcNqcgu7tYEXLX
+C8N6DXggDWPtPRdpk96UW45huvXudpZenrcd7A==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://shibidp.cit.cornell.edu:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+    <AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shibidp.cit.cornell.edu:8443/idp/profile/SAML2/SOAP/AttributeQuery"/>
+  </AttributeAuthorityDescriptor>
+  <Organization>
+    <OrganizationName xml:lang="en">Cornell University</OrganizationName>
+    <OrganizationDisplayName xml:lang="en">Cornell University</OrganizationDisplayName>
+    <OrganizationURL xml:lang="en">http://www.cornell.edu/</OrganizationURL>
+  </Organization>
+  <ContactPerson contactType="technical">
+    <GivenName>Hong Ye</GivenName>
+    <EmailAddress>hy93@cornell.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="other" remd:contactType="http://refeds.org/metadata/contactType/security">
+    <GivenName>University Security Office</GivenName>
+    <EmailAddress>security-services@cornell.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="support">
+    <GivenName>Identity Management</GivenName>
+    <EmailAddress>idmgmt@cornell.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="administrative">
+    <GivenName>Tom Horton</GivenName>
+    <EmailAddress>horton@cornell.edu</EmailAddress>
+  </ContactPerson>
+</EntityDescriptor>
+<EntityDescriptor entityID="urn:mace:incommon:ucop.edu">
+  <Extensions>
+    <mdrpi:RegistrationInfo registrationAuthority="https://incommon.org"/>
+    <mdattr:EntityAttributes>
+      <saml:Attribute Name="http://macedir.org/entity-category-support" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://id.incommon.org/category/research-and-scholarship</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://id.incommon.org/category/registered-by-incommon</saml:AttributeValue>
+      </saml:Attribute>
+    </mdattr:EntityAttributes>
+  </Extensions>
+  <IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+    <Extensions>
+      <shibmd:Scope regexp="false">ucop.edu</shibmd:Scope>
+      <mdui:UIInfo>
+        <mdui:DisplayName xml:lang="en">University of California - Office of the President</mdui:DisplayName>
+      </mdui:UIInfo>
+    </Extensions>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+<!-- Serial No. 1119749830483279885900428890155151164030890824300, expires on Tue Apr 15 21:44:42 2031 GMT -->
+          <ds:X509Certificate>
+MIIDLDCCAhSgAwIBAgIVAMQjUagrFAAc3mU/MM8Y89753FJsMA0GCSqGSIb3DQEB
+BQUAMBsxGTAXBgNVBAMTEHVjb3BpZHAudWNvcC5lZHUwHhcNMTEwNDE1MjE0NDQy
+WhcNMzEwNDE1MjE0NDQyWjAbMRkwFwYDVQQDExB1Y29waWRwLnVjb3AuZWR1MIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5yWRcAVFF4lApTgaJ6Wiq4HQ
+cnHxfdZwqWwEeyKGcjhzS3mbaNZAjR37wsnK19npCIunzb966PK8BAXhATX5L7x9
+0+F8qTDL9NWGB2usN4ftkxDjCbHSzQP8/C1+nLdj0EuyxXxbn5etiVn5ScQ+xMHc
+Myo+u2+7crKloeUERtgXV9d8wbMZ+5dNeSjIVBq/EldB1xpo1oSQz5LSZoWppjqR
+j+HDHQNY2rGdyJchd6M5QjtV5/yWZsjhd++9AiD+avAcNkWrF+3Yg5mcRzgHhMtb
+YHZXtb69hJfO+vwQ655wlgN25pw4H0wLB5/GehMAi82hnL3PGnwvgFDrt2uTIwID
+AQABo2cwZTBEBgNVHREEPTA7ghB1Y29waWRwLnVjb3AuZWR1hidodHRwczovL3Vj
+b3BpZHAudWNvcC5lZHUvaWRwL3NoaWJib2xldGgwHQYDVR0OBBYEFOM/H8+UOT/R
+Dmr2WHQCXELzAZztMA0GCSqGSIb3DQEBBQUAA4IBAQBVzHO+GyiTfvkhMqz29wl5
+6wLckOvYuilJqru9jXZOCzBzpjnK2YbAKmbmDs2BDT3cJfJDDAxM7bZG69mFf+0h
+2qIcgCoZd6054kAEe/T9WloBVRWa2AnQlbtkd3YIkmlCpB6jLNUpkgX6PAVPOpBa
+vEMn/hMWxQb10qaOsGyzp3uXz2aYJgZoEv2qAdVtKpuDSOcPt11A7rwZE4XhVwhb
+hdYDgZJ0gVCbr3oNhiccN7cf790QxrUdTjDq2qSl47S/SpOOLSLH0vflygsdASlb
+r5yHRx2chce62RYQtpM9sBEJjMZ9seBMN3J+y29vdvayfD1mo9Ma56VSHLitFJ9N
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://ucopidp.ucop.edu:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="1"/>
+    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://ucopidp.ucop.edu/idp/profile/SAML1/SOAP/ArtifactResolution" index="2"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://ucopidp.ucop.edu/idp/profile/SAML2/POST/SSO"/>
+    <SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://ucopidp.ucop.edu/idp/profile/Shibboleth/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://ucopidp.ucop.edu/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://ucopidp.ucop.edu/idp/profile/SAML2/Redirect/SSO"/>
+  </IDPSSODescriptor>
+  <AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+    <Extensions>
+      <shibmd:Scope regexp="false">ucop.edu</shibmd:Scope>
+    </Extensions>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+<!-- Serial No. 1119749830483279885900428890155151164030890824300, expires on Tue Apr 15 21:44:42 2031 GMT -->
+          <ds:X509Certificate>
+MIIDLDCCAhSgAwIBAgIVAMQjUagrFAAc3mU/MM8Y89753FJsMA0GCSqGSIb3DQEB
+BQUAMBsxGTAXBgNVBAMTEHVjb3BpZHAudWNvcC5lZHUwHhcNMTEwNDE1MjE0NDQy
+WhcNMzEwNDE1MjE0NDQyWjAbMRkwFwYDVQQDExB1Y29waWRwLnVjb3AuZWR1MIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5yWRcAVFF4lApTgaJ6Wiq4HQ
+cnHxfdZwqWwEeyKGcjhzS3mbaNZAjR37wsnK19npCIunzb966PK8BAXhATX5L7x9
+0+F8qTDL9NWGB2usN4ftkxDjCbHSzQP8/C1+nLdj0EuyxXxbn5etiVn5ScQ+xMHc
+Myo+u2+7crKloeUERtgXV9d8wbMZ+5dNeSjIVBq/EldB1xpo1oSQz5LSZoWppjqR
+j+HDHQNY2rGdyJchd6M5QjtV5/yWZsjhd++9AiD+avAcNkWrF+3Yg5mcRzgHhMtb
+YHZXtb69hJfO+vwQ655wlgN25pw4H0wLB5/GehMAi82hnL3PGnwvgFDrt2uTIwID
+AQABo2cwZTBEBgNVHREEPTA7ghB1Y29waWRwLnVjb3AuZWR1hidodHRwczovL3Vj
+b3BpZHAudWNvcC5lZHUvaWRwL3NoaWJib2xldGgwHQYDVR0OBBYEFOM/H8+UOT/R
+Dmr2WHQCXELzAZztMA0GCSqGSIb3DQEBBQUAA4IBAQBVzHO+GyiTfvkhMqz29wl5
+6wLckOvYuilJqru9jXZOCzBzpjnK2YbAKmbmDs2BDT3cJfJDDAxM7bZG69mFf+0h
+2qIcgCoZd6054kAEe/T9WloBVRWa2AnQlbtkd3YIkmlCpB6jLNUpkgX6PAVPOpBa
+vEMn/hMWxQb10qaOsGyzp3uXz2aYJgZoEv2qAdVtKpuDSOcPt11A7rwZE4XhVwhb
+hdYDgZJ0gVCbr3oNhiccN7cf790QxrUdTjDq2qSl47S/SpOOLSLH0vflygsdASlb
+r5yHRx2chce62RYQtpM9sBEJjMZ9seBMN3J+y29vdvayfD1mo9Ma56VSHLitFJ9N
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://ucopidp.ucop.edu:8443/idp/profile/SAML2/SOAP/AttributeQuery"/>
+    <AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://ucopidp.ucop.edu:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+  </AttributeAuthorityDescriptor>
+  <Organization>
+    <OrganizationName xml:lang="en">University of California - Office of the President</OrganizationName>
+    <OrganizationDisplayName xml:lang="en">University of California - Office of the President</OrganizationDisplayName>
+    <OrganizationURL xml:lang="en">http://www.ucop.edu/welcome.html</OrganizationURL>
+  </Organization>
+  <ContactPerson contactType="support">
+    <GivenName>UCOP DataCenter HelpDesk</GivenName>
+    <EmailAddress>ucopdatacenter.helpdesk@ucop.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="technical">
+    <GivenName>Munish Malik</GivenName>
+    <EmailAddress>aig@ucop.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="administrative">
+    <GivenName>Paul Weiss</GivenName>
+    <EmailAddress>Paul.Weiss@ucop.edu</EmailAddress>
+  </ContactPerson>
+</EntityDescriptor>
+<EntityDescriptor entityID="urn:mace:incommon:uci.edu">
+  <Extensions>
+    <mdrpi:RegistrationInfo registrationAuthority="https://incommon.org"/>
+    <mdattr:EntityAttributes>
+      <saml:Attribute Name="http://macedir.org/entity-category-support" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://id.incommon.org/category/research-and-scholarship</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://id.incommon.org/category/registered-by-incommon</saml:AttributeValue>
+      </saml:Attribute>
+    </mdattr:EntityAttributes>
+  </Extensions>
+  <IDPSSODescriptor errorURL="http://shib.nacs.uci.edu/error.html" protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+    <Extensions>
+      <shibmd:Scope regexp="false">uci.edu</shibmd:Scope>
+      <mdui:UIInfo>
+        <mdui:DisplayName xml:lang="en">University of California, Irvine</mdui:DisplayName>
+      </mdui:UIInfo>
+    </Extensions>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <!-- Serial No. 17102581620187375801, expires on Sat Jul 23 07:56:19 2016 GMT -->
+          <ds:X509Certificate>
+MIIDODCCAiCgAwIBAgIJAO1Yk17FZKi5MA0GCSqGSIb3DQEBBQUAMBwxGjAYBgNV
+BAMTEXNoaWIubmFjcy51Y2kuZWR1MB4XDTEzMDcyNDA3NTYxOVoXDTE2MDcyMzA3
+NTYxOVowHDEaMBgGA1UEAxMRc2hpYi5uYWNzLnVjaS5lZHUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCg9pYLWgF5p/EplyTruFy7hklZv1IHVUQdYk3h
+kDI4iRl8ILBF9jiu/kjmojk9B88BKmmJIlsgNDDTXAVTzSBwxj/pjXpAkYKQYLu2
+Dcm6Kh8TS4Fx4M3RjGc9fDK5JG+sVRUU4htTkBPSLEgIPCATbemprFb538HRr8Eg
+Ve7jRzm+w+xAbxu0em/J4JH9av9+GDL6PyQ1NqrOFWYnUZ499KuztiEVggIwFV/g
+vd0Hz18IsIN0ApBpt1X1EN6YqunvrWrOBznFNGHncezSG9MxdBZNCtRZn5OIhaph
+TLsb+vSBrQWVZPdZ0OIfsPeaHoeaBxl2xYWR7M8Wm01DvPq3AgMBAAGjfTB7MB0G
+A1UdDgQWBBSTqMlmxQq3XpYjILYWxYH4Y/NSRzBMBgNVHSMERTBDgBSTqMlmxQq3
+XpYjILYWxYH4Y/NSR6EgpB4wHDEaMBgGA1UEAxMRc2hpYi5uYWNzLnVjaS5lZHWC
+CQDtWJNexWSouTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4IBAQBGIhIN
+uaSEU3++yhSBynQP/yIRzekCWSPB98Vx7qRFiyyUPNNDUApk+4y/Fx1BcoM7eiGx
+mMtTre7aRX7G8rs6DtvqQ7vndOUUVIngbOwf8rIrt1I+mviAXn+FLtnIzkIOTOtm
+7Duvs8V6TVcU/8uQEqtdRRscc6hMjkhZJ1odo7l7p4m9UqLlz/JqcoeqKTR3F8Ix
+hsP7gGcE2xwe7Mis8qEzSytn6kbkfT7w0ctddiL8J87/rIrsedREN8TFhuhlg8fZ
+v9aJmWKZeZ+2/K2ANetQpVHeZWel58B1y52d0VKhRA1D3IPmtlVETakAsNeTJ1UH
+SQUxnEmjRWv0mN8R
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <!-- Serial No. 13326752637013869187, expires on Mon Jul 13 23:18:51 2026 GMT -->
+          <ds:X509Certificate>
+MIIDODCCAiCgAwIBAgIJALjyIupKtkKDMA0GCSqGSIb3DQEBBQUAMBwxGjAYBgNV
+BAMTEXNoaWIubmFjcy51Y2kuZWR1MB4XDTE2MDcxNTIzMTg1MVoXDTI2MDcxMzIz
+MTg1MVowHDEaMBgGA1UEAxMRc2hpYi5uYWNzLnVjaS5lZHUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQDp964Q5ZWIBmmI/5EfAo1z0S3SBYoLfNl5EkfJ
+rnqntc5VO7AcBjsuNrZTb1zrv/juL7cXXjzcrh1Pbh2BIpwSa3z0yta1KQX3NZBq
+8wZOjdyd6iLkLx6kcT9q5MyWyd8qJ2DmPQZ9wWdPCb0RoRA8RaJW0gp/3JQhh4+E
+RVUJx438JA/+dfouSiXB+UguVYHgceETjOik09A/j6cD1shILMZnuBObAtOAuT9P
+SFiWhOKOLghloAHkc0QDTyXC9BNTBKtyBr9XiYLgvspmy13L3Kc1npPynLt+Kqfu
+BIG0OE/arSOImGD/y6ep6EaB6WTcWaCqNaQ3l4bQX8RaLMp5AgMBAAGjfTB7MB0G
+A1UdDgQWBBTvY0+ZHT/jnKj8RLLgCpDcTowcCzBMBgNVHSMERTBDgBTvY0+ZHT/j
+nKj8RLLgCpDcTowcC6EgpB4wHDEaMBgGA1UEAxMRc2hpYi5uYWNzLnVjaS5lZHWC
+CQC48iLqSrZCgzAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4IBAQBTuqm1
+sr3CNlHMKaou7THCv+ADueR7mE+25C0vG8cEF+5GQ1Rh3dGPqXPmnt/D1R8zKhm5
+XqvkjXTvdE4cvq1hdpwADhDAa9IOYbnRCrbeajfZFUG0tAe5mFayBhKKmSVdM73n
+535nQ2NvTImGgO9bkD1Nss/Yi1WfCWUdoYf6zhE8LP6zQEE75vYHD5nmYpQ/k3Yw
+3dxkifIjuUZf/eTibB26/FRM4cdv05EYBQ88U4+0PzRg8ZRqvZ2Cj0qub7eRQNt6
+Jfm4/QsEos3q2PxBLbvTGUtZ1RizkEWrhF5bk0Ax8xJFkh64xXidpKNgt8Bl6IfZ
+DpHXUZTdfjCTDRRD
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shib.nacs.uci.edu:8443/idp/profile/SAML2/SOAP/ArtifactResolution" index="1"/>
+    <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://shib.nacs.uci.edu:8443/idp/profile/SAML1/SOAP/ArtifactResolution" index="2"/>
+    <SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://shib.nacs.uci.edu/idp/profile/Shibboleth/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://shib.nacs.uci.edu/idp/profile/SAML2/POST/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://shib.nacs.uci.edu/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://shib.nacs.uci.edu/idp/profile/SAML2/Redirect/SSO"/>
+  </IDPSSODescriptor>
+  <AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+    <Extensions>
+      <shibmd:Scope regexp="false">uci.edu</shibmd:Scope>
+    </Extensions>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <!-- Serial No. 17102581620187375801, expires on Sat Jul 23 07:56:19 2016 GMT -->
+          <ds:X509Certificate>
+MIIDODCCAiCgAwIBAgIJAO1Yk17FZKi5MA0GCSqGSIb3DQEBBQUAMBwxGjAYBgNV
+BAMTEXNoaWIubmFjcy51Y2kuZWR1MB4XDTEzMDcyNDA3NTYxOVoXDTE2MDcyMzA3
+NTYxOVowHDEaMBgGA1UEAxMRc2hpYi5uYWNzLnVjaS5lZHUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQCg9pYLWgF5p/EplyTruFy7hklZv1IHVUQdYk3h
+kDI4iRl8ILBF9jiu/kjmojk9B88BKmmJIlsgNDDTXAVTzSBwxj/pjXpAkYKQYLu2
+Dcm6Kh8TS4Fx4M3RjGc9fDK5JG+sVRUU4htTkBPSLEgIPCATbemprFb538HRr8Eg
+Ve7jRzm+w+xAbxu0em/J4JH9av9+GDL6PyQ1NqrOFWYnUZ499KuztiEVggIwFV/g
+vd0Hz18IsIN0ApBpt1X1EN6YqunvrWrOBznFNGHncezSG9MxdBZNCtRZn5OIhaph
+TLsb+vSBrQWVZPdZ0OIfsPeaHoeaBxl2xYWR7M8Wm01DvPq3AgMBAAGjfTB7MB0G
+A1UdDgQWBBSTqMlmxQq3XpYjILYWxYH4Y/NSRzBMBgNVHSMERTBDgBSTqMlmxQq3
+XpYjILYWxYH4Y/NSR6EgpB4wHDEaMBgGA1UEAxMRc2hpYi5uYWNzLnVjaS5lZHWC
+CQDtWJNexWSouTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4IBAQBGIhIN
+uaSEU3++yhSBynQP/yIRzekCWSPB98Vx7qRFiyyUPNNDUApk+4y/Fx1BcoM7eiGx
+mMtTre7aRX7G8rs6DtvqQ7vndOUUVIngbOwf8rIrt1I+mviAXn+FLtnIzkIOTOtm
+7Duvs8V6TVcU/8uQEqtdRRscc6hMjkhZJ1odo7l7p4m9UqLlz/JqcoeqKTR3F8Ix
+hsP7gGcE2xwe7Mis8qEzSytn6kbkfT7w0ctddiL8J87/rIrsedREN8TFhuhlg8fZ
+v9aJmWKZeZ+2/K2ANetQpVHeZWel58B1y52d0VKhRA1D3IPmtlVETakAsNeTJ1UH
+SQUxnEmjRWv0mN8R
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <!-- Serial No. 13326752637013869187, expires on Mon Jul 13 23:18:51 2026 GMT -->
+          <ds:X509Certificate>
+MIIDODCCAiCgAwIBAgIJALjyIupKtkKDMA0GCSqGSIb3DQEBBQUAMBwxGjAYBgNV
+BAMTEXNoaWIubmFjcy51Y2kuZWR1MB4XDTE2MDcxNTIzMTg1MVoXDTI2MDcxMzIz
+MTg1MVowHDEaMBgGA1UEAxMRc2hpYi5uYWNzLnVjaS5lZHUwggEiMA0GCSqGSIb3
+DQEBAQUAA4IBDwAwggEKAoIBAQDp964Q5ZWIBmmI/5EfAo1z0S3SBYoLfNl5EkfJ
+rnqntc5VO7AcBjsuNrZTb1zrv/juL7cXXjzcrh1Pbh2BIpwSa3z0yta1KQX3NZBq
+8wZOjdyd6iLkLx6kcT9q5MyWyd8qJ2DmPQZ9wWdPCb0RoRA8RaJW0gp/3JQhh4+E
+RVUJx438JA/+dfouSiXB+UguVYHgceETjOik09A/j6cD1shILMZnuBObAtOAuT9P
+SFiWhOKOLghloAHkc0QDTyXC9BNTBKtyBr9XiYLgvspmy13L3Kc1npPynLt+Kqfu
+BIG0OE/arSOImGD/y6ep6EaB6WTcWaCqNaQ3l4bQX8RaLMp5AgMBAAGjfTB7MB0G
+A1UdDgQWBBTvY0+ZHT/jnKj8RLLgCpDcTowcCzBMBgNVHSMERTBDgBTvY0+ZHT/j
+nKj8RLLgCpDcTowcC6EgpB4wHDEaMBgGA1UEAxMRc2hpYi5uYWNzLnVjaS5lZHWC
+CQC48iLqSrZCgzAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBQUAA4IBAQBTuqm1
+sr3CNlHMKaou7THCv+ADueR7mE+25C0vG8cEF+5GQ1Rh3dGPqXPmnt/D1R8zKhm5
+XqvkjXTvdE4cvq1hdpwADhDAa9IOYbnRCrbeajfZFUG0tAe5mFayBhKKmSVdM73n
+535nQ2NvTImGgO9bkD1Nss/Yi1WfCWUdoYf6zhE8LP6zQEE75vYHD5nmYpQ/k3Yw
+3dxkifIjuUZf/eTibB26/FRM4cdv05EYBQ88U4+0PzRg8ZRqvZ2Cj0qub7eRQNt6
+Jfm4/QsEos3q2PxBLbvTGUtZ1RizkEWrhF5bk0Ax8xJFkh64xXidpKNgt8Bl6IfZ
+DpHXUZTdfjCTDRRD
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://shib.nacs.uci.edu:8443/idp/profile/SAML1/SOAP/AttributeQuery"/>
+    <AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://shib.nacs.uci.edu:8443/idp/profile/SAML2/SOAP/AttributeQuery"/>
+  </AttributeAuthorityDescriptor>
+  <Organization>
+    <OrganizationName xml:lang="en">University of California-Irvine</OrganizationName>
+    <OrganizationDisplayName xml:lang="en">University of California-Irvine</OrganizationDisplayName>
+    <OrganizationURL xml:lang="en">http://www.uci.edu/</OrganizationURL>
+  </Organization>
+  <ContactPerson contactType="administrative">
+    <GivenName>Dana Watanabe</GivenName>
+    <EmailAddress>dwatanab@uci.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="technical">
+    <GivenName>Chris Peters</GivenName>
+    <EmailAddress>cjpeters@uci.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="support">
+    <GivenName>OIT Response Center</GivenName>
+    <EmailAddress>oit@uci.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="technical">
+    <GivenName>Cliff Chuang</GivenName>
+    <EmailAddress>lchuang1@uci.edu</EmailAddress>
+  </ContactPerson>
+</EntityDescriptor>
+<EntityDescriptor entityID="urn:mace:incommon:washington.edu">
+  <Extensions>
+    <mdrpi:RegistrationInfo registrationAuthority="https://incommon.org"/>
+    <mdattr:EntityAttributes>
+      <saml:Attribute Name="http://macedir.org/entity-category-support" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://id.incommon.org/category/registered-by-incommon</saml:AttributeValue>
+      </saml:Attribute>
+    </mdattr:EntityAttributes>
+  </Extensions>
+  <IDPSSODescriptor errorURL="https://idp.u.washington.edu/error-incommon.html" protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+    <Extensions>
+      <shibmd:Scope regexp="false">washington.edu</shibmd:Scope>
+      <mdui:UIInfo>
+        <mdui:DisplayName xml:lang="en">University of Washington</mdui:DisplayName>
+        <mdui:Description xml:lang="en">The University of Washington IdP enables standards-based federation for the UW community.
+</mdui:Description>
+        <mdui:InformationURL xml:lang="en">https://wiki.cac.washington.edu/x/fiOD</mdui:InformationURL>
+        <mdui:PrivacyStatementURL xml:lang="en">http://www.washington.edu/online/privacy/</mdui:PrivacyStatementURL>
+        <mdui:Logo height="79" width="160" xml:lang="en">https://wiki.cac.washington.edu/download/attachments/69729985/uw-logo.png</mdui:Logo>
+      </mdui:UIInfo>
+    </Extensions>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <!-- Serial No. 14562430836939313802, expires on Fri Apr 23 19:10:39 2021 GMT -->
+          <ds:X509Certificate>
+MIID/TCCAuWgAwIBAgIJAMoYJbDt9lKKMA0GCSqGSIb3DQEBBQUAMFwxCzAJBgNV
+BAYTAlVTMQswCQYDVQQIEwJXQTEhMB8GA1UEChMYVW5pdmVyc2l0eSBvZiBXYXNo
+aW5ndG9uMR0wGwYDVQQDExRpZHAudS53YXNoaW5ndG9uLmVkdTAeFw0xMTA0MjYx
+OTEwMzlaFw0yMTA0MjMxOTEwMzlaMFwxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJX
+QTEhMB8GA1UEChMYVW5pdmVyc2l0eSBvZiBXYXNoaW5ndG9uMR0wGwYDVQQDExRp
+ZHAudS53YXNoaW5ndG9uLmVkdTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC
+ggEBAMH9G8m68L0Hf9bmf4/7c+ERxgDQrbq50NfSi2YTQWc1veUIPYbZy1agSNuc
+4dwn3RtC0uOQbdNTYUAiVTcYgaYceJVB7syWf9QyGIrglZPMu98c5hWb7vqwvs6d
+3s2Sm7tBib2v6xQDDiZ4KJxpdAvsoPQlmGdgpFfmAsiYrnYFXLTHgbgCc/YhV8lu
+bTakUdI3bMYWfh9dkj+DVGUmt2gLtQUzbuH8EU44vnXgrQYSXNQkmRcyoE3rj4Rh
+hbu/p5D3P+nuOukLYFOLRaNeiiGyTu3P7gtc/dy/UjUrf+pH75UUU7Lb369dGEfZ
+wvVtITXsdyp0pBfun4CP808H9N0CAwEAAaOBwTCBvjAdBgNVHQ4EFgQUP5smx3ZY
+KODMkDglkTbduvLcGYAwgY4GA1UdIwSBhjCBg4AUP5smx3ZYKODMkDglkTbduvLc
+GYChYKReMFwxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJXQTEhMB8GA1UEChMYVW5p
+dmVyc2l0eSBvZiBXYXNoaW5ndG9uMR0wGwYDVQQDExRpZHAudS53YXNoaW5ndG9u
+LmVkdYIJAMoYJbDt9lKKMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADggEB
+AEo7c2CNHEI+Fvz5DhwumU+WHXqwSOK47MxXwNJVpFQ9GPR2ZGDAq6hzLJLAVWcY
+4kB3ECDkRtysAWSFHm1roOU7xsU9f0C17QokoXfLNC0d7KoivPM6ctl8aRftU5mo
+yFJkkJX3qSExXrl053uxTOQVPms4ypkYv1A/FBZWgSC8eNoYnBnv1Mhy4m8bfeEN
+7qT9rFoxh4cVjMH1Ykq7JWyFXLEB4ifzH4KHyplt5Ryv61eh6J1YPFa2RurVTyGp
+HJZeOLUIBvJu15GzcexuDDXe0kg7sHD6PbK0xzEF/QeXP/hXzMxR9kQXB/IR/b2k
+4ien+EM3eY/ueBcTZ95dgVM=
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://idp.u.washington.edu/idp/profile/Shibboleth/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp.u.washington.edu/idp/profile/SAML2/POST/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp.u.washington.edu/idp/profile/SAML2/Redirect/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://idp.u.washington.edu/idp/profile/SAML2/SOAP/ECP"/>
+  </IDPSSODescriptor>
+  <Organization>
+    <OrganizationName xml:lang="en">University of Washington</OrganizationName>
+    <OrganizationDisplayName xml:lang="en">University of Washington</OrganizationDisplayName>
+    <OrganizationURL xml:lang="en">http://www.washington.edu/</OrganizationURL>
+  </Organization>
+  <ContactPerson contactType="technical">
+    <GivenName>IAM Technical Support</GivenName>
+    <EmailAddress>iam-support@uw.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="administrative">
+    <GivenName>IAM Administrative Support</GivenName>
+    <EmailAddress>iam-support@uw.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="support">
+    <GivenName>IAM Support</GivenName>
+    <EmailAddress>iam-support@uw.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="other" remd:contactType="http://refeds.org/metadata/contactType/security">
+    <GivenName>IAM Security Support</GivenName>
+    <EmailAddress>iam-support@uw.edu</EmailAddress>
+  </ContactPerson>
+</EntityDescriptor>
+<EntityDescriptor entityID="https://demo.testbed.tier.internet2.edu/idp">
+  <Extensions>
+    <mdrpi:RegistrationInfo registrationAuthority="https://incommon.org"/>
+    <mdattr:EntityAttributes>
+      <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://id.incommon.org/category/registered-by-incommon</saml:AttributeValue>
+      </saml:Attribute>
+    </mdattr:EntityAttributes>
+  </Extensions>
+  <IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <Extensions>
+      <shibmd:Scope regexp="false">tier.internet2.edu</shibmd:Scope>
+      <mdui:UIInfo>
+        <mdui:DisplayName xml:lang="en">TIER Demo Workbench</mdui:DisplayName>
+        <mdui:Description xml:lang="en">Internet2 TIER demo workbench IdP.</mdui:Description>
+        <mdui:Logo height="200" width="200" xml:lang="en">https://www.internet2.edu/media/medialibrary/2013/10/15/internet2_logo_200pxtrans.gif</mdui:Logo>
+      </mdui:UIInfo>
+    </Extensions>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <!-- Serial No. 149753944075795342522575234690360944982065183003, expires on Sun Dec 14 16:31:57 2036 GMT -->
+          <ds:X509Certificate>
+MIIDdTCCAl2gAwIBAgIUGjsy+C+mk0C3wXkUCDxHQFg8eRswDQYJKoZIhvcNAQEL
+BQAwLTErMCkGA1UEAwwiaWRwLWRldi50ZXN0YmVkLnRpZXIuaW50ZXJuZXQyLmVk
+dTAeFw0xNjEyMTQxNjMxNTdaFw0zNjEyMTQxNjMxNTdaMC0xKzApBgNVBAMMImlk
+cC1kZXYudGVzdGJlZC50aWVyLmludGVybmV0Mi5lZHUwggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQCPc0szG9K4pf1+GxMPAPO+RTqLX0KG62IG4QTnHqPD
+ry1VgZ3vJDFBmK2mSd8n2mMm+YIkxgXi3EmrZU59XltDr83tzeP3hHukGvdmOz/F
+Wo1GedQXCi5WnVPtSaRf2npY0NZFI3+VBicr3kXtU7RUsHuqxZD8Tc+EFDP6pL5g
+uT6s/ptg7tG4337+u0447sAI2KG5i7eU5HHtWJpdxjxPCpnrY5cll+edSYQpsX8C
+0JFNqrfc6KXYD77kCv1303aVolxaCOzp6RfJutHkaiHKS4dfLMF/rSFSblWeb8ni
+WFh14te9mpSKil6EB5uoVaeVYQuDYkkg6iRSjc+2jL7BAgMBAAGjgYwwgYkwHQYD
+VR0OBBYEFIe02+fMA5bIM3hOJUHfbJZIubnwMGgGA1UdEQRhMF+CImlkcC1kZXYu
+dGVzdGJlZC50aWVyLmludGVybmV0Mi5lZHWGOWh0dHBzOi8vaWRwLWRldi50ZXN0
+YmVkLnRpZXIuaW50ZXJuZXQyLmVkdS9pZHAvc2hpYmJvbGV0aDANBgkqhkiG9w0B
+AQsFAAOCAQEACyzV0gA7s7pMrn6aTzocUXmkfdmV6kZKunVzhIkO6PplIo2z/QX6
+HSJUoT93uPwQO82qJO2becPiCSak60xXNI1SKDKwYuTJ95GbNZR0xFd8PBR255u7
++t8WZ4GAFfsr4J1EPAup00zkllCyxP4y9tAj3qHKzM4R6j1otY0xfr8GRQAYlNUI
+D9Eri+anK429QrnefYs9HMmbcnoqO066X9vwrEm8H7Qr627sfXmg78u4tFzmVMvj
+Cc0igZnrqtl1oVoDxGLrMUzlqCTvDd2pW8vJ3L7YDu7dU5k+vcy9Wsd/I5KfBTvY
+L9U1JRZfcP2rPv0wrvKozU5hsrKXj7DsiQ==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://idp-dev.testbed.tier.internet2.edu/idp/profile/SAML2/POST/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://idp-dev.testbed.tier.internet2.edu/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://idp-dev.testbed.tier.internet2.edu/idp/profile/SAML2/Redirect/SSO"/>
+  </IDPSSODescriptor>
+  <Organization>
+    <OrganizationName xml:lang="en">Internet2</OrganizationName>
+    <OrganizationDisplayName xml:lang="en">Internet2</OrganizationDisplayName>
+    <OrganizationURL xml:lang="en">http://www.internet2.edu</OrganizationURL>
+  </Organization>
+  <ContactPerson contactType="technical">
+    <GivenName>Tech Support</GivenName>
+    <EmailAddress>techsupport@internet2.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="administrative">
+    <GivenName>Tech Support</GivenName>
+    <EmailAddress>techsupport@internet2.edu</EmailAddress>
+  </ContactPerson>
+</EntityDescriptor>
+<EntityDescriptor entityID="urn:mace:incommon:internet2.edu">
+  <Extensions>
+    <mdrpi:RegistrationInfo registrationAuthority="https://incommon.org"/>
+    <mdattr:EntityAttributes>
+      <saml:Attribute Name="http://macedir.org/entity-category-support" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+      </saml:Attribute>
+      <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://id.incommon.org/category/registered-by-incommon</saml:AttributeValue>
+      </saml:Attribute>
+    </mdattr:EntityAttributes>
+  </Extensions>
+  <IDPSSODescriptor errorURL="https://origin.internet2.edu/error.html" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <Extensions>
+      <shibmd:Scope regexp="false">internet2.edu</shibmd:Scope>
+      <mdui:UIInfo>
+        <mdui:DisplayName xml:lang="en">Internet2</mdui:DisplayName>
+        <mdui:InformationURL xml:lang="en">http://www.internet2.edu/about/</mdui:InformationURL>
+        <mdui:PrivacyStatementURL xml:lang="en">http://www.internet2.edu/policies/privacy/</mdui:PrivacyStatementURL>
+        <mdui:Logo height="200" width="200" xml:lang="en">https://www.internet2.edu/media/medialibrary/2013/10/15/internet2_logo_200pxtrans.gif</mdui:Logo>
+      </mdui:UIInfo>
+    </Extensions>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+          <!-- Serial No. 9317561342699188557, expires on Mon May 19 13:23:15 2025 GMT -->
+          <ds:X509Certificate>
+MIIDpTCCAo2gAwIBAgIJAIFOoKy0fzFNMA0GCSqGSIb3DQEBCwUAMIGRMQswCQYD
+VQQGEwJVUzERMA8GA1UECBMITWljaGlnYW4xEjAQBgNVBAcTCUFubiBBcmJvcjES
+MBAGA1UEChMJSW50ZXJuZXQyMR0wGwYDVQQDExRvcmlnaW4uaW50ZXJuZXQyLmVk
+dTEoMCYGCSqGSIb3DQEJARYZdGVjaHN1cHBvcnRAaW50ZXJuZXQyLmVkdTAeFw0x
+NTA1MjIxMzIzMTVaFw0yNTA1MTkxMzIzMTVaMIGRMQswCQYDVQQGEwJVUzERMA8G
+A1UECBMITWljaGlnYW4xEjAQBgNVBAcTCUFubiBBcmJvcjESMBAGA1UEChMJSW50
+ZXJuZXQyMR0wGwYDVQQDExRvcmlnaW4uaW50ZXJuZXQyLmVkdTEoMCYGCSqGSIb3
+DQEJARYZdGVjaHN1cHBvcnRAaW50ZXJuZXQyLmVkdTCCASIwDQYJKoZIhvcNAQEB
+BQADggEPADCCAQoCggEBAPBzFvoogACW6IKB0HnwFX09zQ9UAP/xdW4MQHD5nvJO
+UbKBW2Jqm+XfRwjgJnpDUokjj7mikDKS63YNHkNfTacH2i/Y7NsArXC/qik2bwW6
+rlYEWDJTjmQRJXUEGYY21UT8MAiyuDdLUrkHqYjUA5pQIWkzvIXudZ06Wa57jf3w
+EBOAnlyGhi7PyDzkkoJhpB/8A598zi/OBGNHU/QfVAN9ohrQW/7a4xM4aBx9n9QW
+ohDsDI7sY+N7xTOmbxvt+vPyvAo5EwneUbZsF3QHTnysIWxMfrRUNMszj0vOv6to
+EYW0b+rGY7pc6wU3KkIC8D7Obym7GvlLl3Rp2cwRF0cCAwEAATANBgkqhkiG9w0B
+AQsFAAOCAQEAry/zf0b8D0C46Q5dqsZxyEIKFikqB/4MBFqESenAm/xkvdUk/OdV
+g9ih+jAuZC3M1TqB6A4OV6awnNocH61Ko5DF0BO3uU9JKUzJhrew8Kb81TSB7akV
+NDyhn66iudRNaPthvJ79NYugbx1SjJYznqfLgw/PolLfjpW7DACIa9CMliXJTOVP
+hDtzphzWaOjXdfU904A3QuaeQq2LYOsYkG+GmFLSvzJ1UbvQ/NUTFeTpIVgsaUOb
+FaaEtp/LBAgwDJl9hoToLsRJHZdXevqmqKokP5I6LjXianwSgYDzku3sOwt/YwZM
+O5DEpKOPF/GsgEfq0uuXyFwYqiJLJFuEbw==
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://origin.internet2.edu/idp/profile/SAML2/Redirect/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://origin.internet2.edu/idp/profile/SAML2/POST/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://origin.internet2.edu/idp/profile/SAML2/POST-SimpleSign/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://origin.internet2.edu/idp/profile/SAML2/SOAP/ECP"/>
+  </IDPSSODescriptor>
+  <Organization>
+    <OrganizationName xml:lang="en">Internet2</OrganizationName>
+    <OrganizationDisplayName xml:lang="en">Internet2</OrganizationDisplayName>
+    <OrganizationURL xml:lang="en">http://www.internet2.edu</OrganizationURL>
+  </Organization>
+  <ContactPerson contactType="technical">
+    <GivenName>Technical Support</GivenName>
+    <EmailAddress>techsupport@internet2.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="administrative">
+    <GivenName>Technical Support</GivenName>
+    <EmailAddress>techsupport@internet2.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="support">
+    <GivenName>Technical Support</GivenName>
+    <EmailAddress>techsupport@internet2.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="other" remd:contactType="http://refeds.org/metadata/contactType/security">
+    <GivenName>Technical Support</GivenName>
+    <EmailAddress>techsupport@internet2.edu</EmailAddress>
+  </ContactPerson>
+</EntityDescriptor>
+<EntityDescriptor entityID="urn:mace:incommon:ucsd.edu">
+  <Extensions>
+    <mdrpi:RegistrationInfo registrationAuthority="https://incommon.org"/>
+    <mdattr:EntityAttributes>
+      <saml:Attribute Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+        <saml:AttributeValue>http://id.incommon.org/category/registered-by-incommon</saml:AttributeValue>
+      </saml:Attribute>
+    </mdattr:EntityAttributes>
+  </Extensions>
+  <IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+    <Extensions>
+      <shibmd:Scope regexp="false">ucsd.edu</shibmd:Scope>
+      <mdui:UIInfo>
+        <mdui:DisplayName xml:lang="en">University of California-San Diego</mdui:DisplayName>
+      </mdui:UIInfo>
+    </Extensions>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+<!-- Serial No. 268, expires on Sun Feb 28 21:18:44 2010 GMT -->
+          <ds:X509Certificate>
+MIIFjzCCBHegAwIBAgICAQwwDQYJKoZIhvcNAQEFBQAwVjELMAkGA1UEBhMCVVMx
+HDAaBgNVBAoTE0luQ29tbW9uIEZlZGVyYXRpb24xKTAnBgNVBAMTIEluQ29tbW9u
+IENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTA4MDIyODIxMTg0NFoXDTEwMDIy
+ODIxMTg0NFowFjEUMBIGA1UEAxMLYTQudWNzZC5lZHUwggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQDcEzH+KYmuGSDjlZeaOJc8VJS0/bRBjfE6HHDV9nN8
+ghEm5AMS5OPx/ruM+5gchwuryogOMY7abSe3BpvVT/3A+fjKSNnklMPmQUuO6AqW
+7a6/w9w30tl/2OzG3u1sGAr1FkEXf/DmJOtXpAOhPAmyYb6o41k+ZwpvnRuyaoup
+IC1R5LLU2jCnnZCxBF6gvDlvmpaEO2c2aHrKJIaqxDuVhTDJRWp+IkcT8Jy4JAwv
+0R1w8FJXLyZ0RVeNL8v3ZcCzInfxsS1/+FuOOHitZ18WO4Ds5PJ5tEzree95EGe+
+U9dpjMrJQDdKiqPE18K7cQGuHfVkIMkU4phuyUXWKk09AgMBAAGjggKlMIICoTAO
+BgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcD
+AQYIKwYBBQUHAwIwHQYDVR0OBBYEFPe85gpJxg5DPieEeNZF9FHWbW0rMH4GA1Ud
+IwR3MHWAFJMtyGEYrWPjm2Wznd2Nk7rnymNFoVqkWDBWMQswCQYDVQQGEwJVUzEc
+MBoGA1UEChMTSW5Db21tb24gRmVkZXJhdGlvbjEpMCcGA1UEAxMgSW5Db21tb24g
+Q2VydGlmaWNhdGlvbiBBdXRob3JpdHmCAQAwgboGCCsGAQUFBwEBBIGtMIGqMIGn
+BggrBgEFBQcwAoaBmmh0dHA6Ly9pbmNvbW1vbmNhMS5pbmNvbW1vbmZlZGVyYXRp
+b24ub3JnL2JyaWRnZS9jZXJ0cy9jYS1jZXJ0cy5wN2IKCQlDQSBJc3N1ZXJzIC0g
+VVJJOmh0dHA6Ly9pbmNvbW1vbmNhMi5pbmNvbW1vbmZlZGVyYXRpb24ub3JnL2Jy
+aWRnZS9jZXJ0cy9jYS1jZXJ0cy5wN2IwgY0GA1UdHwSBhTCBgjA/oD2gO4Y5aHR0
+cDovL2luY29tbW9uY3JsMS5pbmNvbW1vbmZlZGVyYXRpb24ub3JnL2NybC9lZWNy
+bHMuY3JsMD+gPaA7hjlodHRwOi8vaW5jb21tb25jcmwyLmluY29tbW9uZmVkZXJh
+dGlvbi5vcmcvY3JsL2VlY3Jscy5jcmwwXgYDVR0gBFcwVTBTBgsrBgEEAa4jAQQB
+ATBEMEIGCCsGAQUFBwIBFjZodHRwOi8vaW5jb21tb25jYS5pbmNvbW1vbmZlZGVy
+YXRpb24ub3JnL3ByYWN0aWNlcy5wZGYwFgYDVR0RBA8wDYILYTQudWNzZC5lZHUw
+DQYJKoZIhvcNAQEFBQADggEBAJeIDxI87H9yjtD8BLdiwEBsyKiADqL4jo2EeF9Z
+kz6GA89zEUXaL6M+UeWaHwrpbKbpR7JYb87qJhFYzCBBdLjUpHnvHI1M1/wl44XF
+/W8PpcuDF5vZmVDxYmKEJQJHnvRqOU08vIvk5bpgcI8ctNXUDWh9uEdtKMrg3+Tk
+gKCmAXAl9I6SOrnEy98RJ7yWL51qXHaWE5xXl9dTCh43JONZWlsah0smeDYkYhZq
+7g+zU6RW3i/LigqVYW84V0+WH30htKco5uwr0SGoL9u8PGbYPgrRtCJIo5r8eE7N
+R1kv+lykb9hrz1KUyDvLTDhWQ7l4bXDaP7/dIpaTrtd0zC4=
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+<!-- Serial No. 18012077950548718489, expires on Sun Apr  5 22:47:09 2020 GMT -->
+          <ds:X509Certificate>
+MIIDJjCCAg6gAwIBAgIJAPn3wXbFGjOZMA0GCSqGSIb3DQEBBQUAMBYxFDASBgNV
+BAMTC2E0LnVjc2QuZWR1MB4XDTEwMDQwODIyNDcwOVoXDTIwMDQwNTIyNDcwOVow
+FjEUMBIGA1UEAxMLYTQudWNzZC5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDUEpd4l0/TgMjGp8nyEA3eyMDB001MZIq/u9wjSNsPFoXGudwyRryf
+B+yKk4MTX/VqQ6cMZ1oFjP1h1phl5xWG1PZu2vXpjJuHb5X1J4GCK2u7j5mwN6zK
+/ekTVI4X/0ALe7uPE6ltcKd1XQctZfCe27e+cUdbqz3y16s+RWyUrC2pRK2aJuxm
+hR7rxMwAcpUYBrINqvoGAz7MIBZ2MNwNlMNK2scGBLsdahBG/JZk0PUYiwRxA1aq
+YAEeOsuR6jVhudDOAfTK/XtWneUrO0G0C3fCVmX5MGrUCPIY/cVAbuNBLGYDjg1+
+7iazyImK4nbgXQzBd7QfLayuITY5pludAgMBAAGjdzB1MB0GA1UdDgQWBBTIPcIR
+7y/+BZAKv3XBLkJsAw0l9DBGBgNVHSMEPzA9gBTIPcIR7y/+BZAKv3XBLkJsAw0l
+9KEapBgwFjEUMBIGA1UEAxMLYTQudWNzZC5lZHWCCQD598F2xRozmTAMBgNVHRME
+BTADAQH/MA0GCSqGSIb3DQEBBQUAA4IBAQAwB9Fwts/0sEse6XtafnaYxoAukZwS
+CpbUv+LOLgwmFgLCm+eo9kCvbTTS4JZ3Ctz9/yGfRIcNygWsALSeBvpXmNA0gI/V
+CcsFrrllX1SrpIz5yuwHRZcj1WDDvAzqanvjXGT+2BxmjYS7E25XG+eMC0JlzxLV
+4PKbKEVZlfBEoRSZ/8wS2MqtZm2COZ21PRBHyfkxopkKpdqImQksx36nvEj4Ow6H
+ua34fsQvpcou9ufs1WPqLRTD6AVU1ZrGFdFFAOFY8mG6BEDEplp0Jpn8knxtc2Cg
+Y8R3vksytTmgdqrqYKEpA/CP8EUxyRB3IGOdZ3cJgxabq5X2FBWEFU8y
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://a4.ucsd.edu/tritON/HS"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://a4.ucsd.edu/tritON/profile/SAML2/POST/SSO"/>
+    <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://a4.ucsd.edu/tritON/profile/SAML2/Redirect/SSO"/>
+  </IDPSSODescriptor>
+  <AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+    <Extensions>
+      <shibmd:Scope regexp="false">ucsd.edu</shibmd:Scope>
+    </Extensions>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+<!-- Serial No. 268, expires on Sun Feb 28 21:18:44 2010 GMT -->
+          <ds:X509Certificate>
+MIIFjzCCBHegAwIBAgICAQwwDQYJKoZIhvcNAQEFBQAwVjELMAkGA1UEBhMCVVMx
+HDAaBgNVBAoTE0luQ29tbW9uIEZlZGVyYXRpb24xKTAnBgNVBAMTIEluQ29tbW9u
+IENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTA4MDIyODIxMTg0NFoXDTEwMDIy
+ODIxMTg0NFowFjEUMBIGA1UEAxMLYTQudWNzZC5lZHUwggEiMA0GCSqGSIb3DQEB
+AQUAA4IBDwAwggEKAoIBAQDcEzH+KYmuGSDjlZeaOJc8VJS0/bRBjfE6HHDV9nN8
+ghEm5AMS5OPx/ruM+5gchwuryogOMY7abSe3BpvVT/3A+fjKSNnklMPmQUuO6AqW
+7a6/w9w30tl/2OzG3u1sGAr1FkEXf/DmJOtXpAOhPAmyYb6o41k+ZwpvnRuyaoup
+IC1R5LLU2jCnnZCxBF6gvDlvmpaEO2c2aHrKJIaqxDuVhTDJRWp+IkcT8Jy4JAwv
+0R1w8FJXLyZ0RVeNL8v3ZcCzInfxsS1/+FuOOHitZ18WO4Ds5PJ5tEzree95EGe+
+U9dpjMrJQDdKiqPE18K7cQGuHfVkIMkU4phuyUXWKk09AgMBAAGjggKlMIICoTAO
+BgNVHQ8BAf8EBAMCBaAwDAYDVR0TAQH/BAIwADAdBgNVHSUEFjAUBggrBgEFBQcD
+AQYIKwYBBQUHAwIwHQYDVR0OBBYEFPe85gpJxg5DPieEeNZF9FHWbW0rMH4GA1Ud
+IwR3MHWAFJMtyGEYrWPjm2Wznd2Nk7rnymNFoVqkWDBWMQswCQYDVQQGEwJVUzEc
+MBoGA1UEChMTSW5Db21tb24gRmVkZXJhdGlvbjEpMCcGA1UEAxMgSW5Db21tb24g
+Q2VydGlmaWNhdGlvbiBBdXRob3JpdHmCAQAwgboGCCsGAQUFBwEBBIGtMIGqMIGn
+BggrBgEFBQcwAoaBmmh0dHA6Ly9pbmNvbW1vbmNhMS5pbmNvbW1vbmZlZGVyYXRp
+b24ub3JnL2JyaWRnZS9jZXJ0cy9jYS1jZXJ0cy5wN2IKCQlDQSBJc3N1ZXJzIC0g
+VVJJOmh0dHA6Ly9pbmNvbW1vbmNhMi5pbmNvbW1vbmZlZGVyYXRpb24ub3JnL2Jy
+aWRnZS9jZXJ0cy9jYS1jZXJ0cy5wN2IwgY0GA1UdHwSBhTCBgjA/oD2gO4Y5aHR0
+cDovL2luY29tbW9uY3JsMS5pbmNvbW1vbmZlZGVyYXRpb24ub3JnL2NybC9lZWNy
+bHMuY3JsMD+gPaA7hjlodHRwOi8vaW5jb21tb25jcmwyLmluY29tbW9uZmVkZXJh
+dGlvbi5vcmcvY3JsL2VlY3Jscy5jcmwwXgYDVR0gBFcwVTBTBgsrBgEEAa4jAQQB
+ATBEMEIGCCsGAQUFBwIBFjZodHRwOi8vaW5jb21tb25jYS5pbmNvbW1vbmZlZGVy
+YXRpb24ub3JnL3ByYWN0aWNlcy5wZGYwFgYDVR0RBA8wDYILYTQudWNzZC5lZHUw
+DQYJKoZIhvcNAQEFBQADggEBAJeIDxI87H9yjtD8BLdiwEBsyKiADqL4jo2EeF9Z
+kz6GA89zEUXaL6M+UeWaHwrpbKbpR7JYb87qJhFYzCBBdLjUpHnvHI1M1/wl44XF
+/W8PpcuDF5vZmVDxYmKEJQJHnvRqOU08vIvk5bpgcI8ctNXUDWh9uEdtKMrg3+Tk
+gKCmAXAl9I6SOrnEy98RJ7yWL51qXHaWE5xXl9dTCh43JONZWlsah0smeDYkYhZq
+7g+zU6RW3i/LigqVYW84V0+WH30htKco5uwr0SGoL9u8PGbYPgrRtCJIo5r8eE7N
+R1kv+lykb9hrz1KUyDvLTDhWQ7l4bXDaP7/dIpaTrtd0zC4=
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo>
+        <ds:X509Data>
+<!-- Serial No. 18012077950548718489, expires on Sun Apr  5 22:47:09 2020 GMT -->
+          <ds:X509Certificate>
+MIIDJjCCAg6gAwIBAgIJAPn3wXbFGjOZMA0GCSqGSIb3DQEBBQUAMBYxFDASBgNV
+BAMTC2E0LnVjc2QuZWR1MB4XDTEwMDQwODIyNDcwOVoXDTIwMDQwNTIyNDcwOVow
+FjEUMBIGA1UEAxMLYTQudWNzZC5lZHUwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAw
+ggEKAoIBAQDUEpd4l0/TgMjGp8nyEA3eyMDB001MZIq/u9wjSNsPFoXGudwyRryf
+B+yKk4MTX/VqQ6cMZ1oFjP1h1phl5xWG1PZu2vXpjJuHb5X1J4GCK2u7j5mwN6zK
+/ekTVI4X/0ALe7uPE6ltcKd1XQctZfCe27e+cUdbqz3y16s+RWyUrC2pRK2aJuxm
+hR7rxMwAcpUYBrINqvoGAz7MIBZ2MNwNlMNK2scGBLsdahBG/JZk0PUYiwRxA1aq
+YAEeOsuR6jVhudDOAfTK/XtWneUrO0G0C3fCVmX5MGrUCPIY/cVAbuNBLGYDjg1+
+7iazyImK4nbgXQzBd7QfLayuITY5pludAgMBAAGjdzB1MB0GA1UdDgQWBBTIPcIR
+7y/+BZAKv3XBLkJsAw0l9DBGBgNVHSMEPzA9gBTIPcIR7y/+BZAKv3XBLkJsAw0l
+9KEapBgwFjEUMBIGA1UEAxMLYTQudWNzZC5lZHWCCQD598F2xRozmTAMBgNVHRME
+BTADAQH/MA0GCSqGSIb3DQEBBQUAA4IBAQAwB9Fwts/0sEse6XtafnaYxoAukZwS
+CpbUv+LOLgwmFgLCm+eo9kCvbTTS4JZ3Ctz9/yGfRIcNygWsALSeBvpXmNA0gI/V
+CcsFrrllX1SrpIz5yuwHRZcj1WDDvAzqanvjXGT+2BxmjYS7E25XG+eMC0JlzxLV
+4PKbKEVZlfBEoRSZ/8wS2MqtZm2COZ21PRBHyfkxopkKpdqImQksx36nvEj4Ow6H
+ua34fsQvpcou9ufs1WPqLRTD6AVU1ZrGFdFFAOFY8mG6BEDEplp0Jpn8knxtc2Cg
+Y8R3vksytTmgdqrqYKEpA/CP8EUxyRB3IGOdZ3cJgxabq5X2FBWEFU8y
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+    <AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://a4.ucsd.edu:8443/tritON/profile/SAML1/SOAP/AttributeQuery"/>
+    <AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://a4.ucsd.edu:8443/tritON/profile/SAML2/SOAP/AttributeQuery"/>
+  </AttributeAuthorityDescriptor>
+  <Organization>
+    <OrganizationName xml:lang="en">University of California-San Diego</OrganizationName>
+    <OrganizationDisplayName xml:lang="en">University of California-San Diego</OrganizationDisplayName>
+    <OrganizationURL xml:lang="en">http://www.ucsd.edu/</OrganizationURL>
+  </Organization>
+  <ContactPerson contactType="support">
+    <GivenName>ACT Help Desk</GivenName>
+    <EmailAddress>acthelp@ucsd.edu</EmailAddress>
+  </ContactPerson>
+  <ContactPerson contactType="technical">
+    <GivenName>Shibboleth/IDM Support</GivenName>
+    <EmailAddress>shibsupport@ucsd.edu</EmailAddress>
+  </ContactPerson>
+</EntityDescriptor>
+
+</EntitiesDescriptor>
